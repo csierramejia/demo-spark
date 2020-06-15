@@ -28,14 +28,13 @@ public class DemoSpark {
 		final IUserService userService = new UserServiceMapImpl();
 
 		port(8080);
+		
 		get("/hello", (req, res) -> "Hola Mundo. Demo Spark.");
 
         get("/hello/:name", (req,res)->{
             return "Hello, "+ req.params(":name");
         });
         
-		//get("/helloworld", (req, res) -> "Hello " + req.queryParams("name"));
-		
 		get("/helloworld", (req, res) ->
 		{		
 			res.status(200);

@@ -1,5 +1,8 @@
 # Demo-spark
-Demo Spark
+
+Prueba de concepto desarrollando APIs REST
+
+## Configuración
 
 Java 8
 
